@@ -1,0 +1,4 @@
+to install v-19
+bun install react@rc
+
+bun install react-dom@rc
