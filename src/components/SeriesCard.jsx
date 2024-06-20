@@ -1,17 +1,18 @@
 import React from 'react'
 
-const SeriesCard = ({series}) => {
+const SeriesCard = ({ data }) => {
+    const {id,img_url,name,rating,description,genre,cast,watch_url}=data
   return (
-    <li key={series.id}>
+    <li key={id}>
       <div>
-        <img src={series.img_url} alt={series.name} width="40%" height="40%" />
+        <img src={img_url} alt={name} width="40%" height="40%" />
       </div>
-      <h2>Name: {series.name}</h2>
-      <h3>Rating: {series.rating}</h3>
-      <p>Summery: {series.description}</p>
-      <p>Genre: {series.genre}</p>
-      <p>Cast: {series.cast}</p>
-      <a href={series.watch_url} target="_blank">
+      <h2>Name: {name}</h2>
+      <h3>Rating: {rating}</h3>
+      <p>Summery: {description}</p>
+      <p>Genre: {genre}</p>
+      <p>Cast: {cast}</p>
+      <a href={watch_url} target="_blank">
         <button>Watch Now</button>
       </a>
     </li>
