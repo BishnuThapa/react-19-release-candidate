@@ -2,3 +2,5 @@ to install v-19
 bun install react@rc
 
 bun install react-dom@rc
+
+a file can have only one default export. & you can name import whatever you want.
